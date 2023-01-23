@@ -1967,7 +1967,6 @@ This lab walks through the configuration of Events and Triggers in the Webex Con
 
 - Save the flow and make live.
 
-![12.21_9.png](/assets/images/12.21_9.png)
 
 ### 2.     Creating an Event in Webex Engage Portal
 
