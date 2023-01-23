@@ -1893,7 +1893,6 @@ Vidcast: [https://app.vidcast.io/share/fe9230a8-3dfe-4177-b804-3065218a1873](htt
 
 ![Lab12.20_CustomNodeDemo](/assets/images/Lab12.20_CustomNodeDemo.png)
 
-
 <p style="text-align:center"><strong>Congratulations, you have completed **ALL section**. Well done!!!</strong></p>
 		
 <p style="text-align:center;"><img src="/assets/gitbook/images/webex.png" width="100"></p>
@@ -1928,23 +1927,24 @@ This lab walks through the configuration of Events and Triggers in the Webex Con
 
 -   From Left column, navigate to Assets--> Integrations
 
-![[Pasted image 20230123163907.png]]
+![Pasted image 20230123163907.png](/assets/images/Pasted image 20230123163907.png])
+
 
 - Click on Add Integration-->Inbound Webhook
 
-![[Pasted image 20230123165159.png]]
+![Pasted image 20230123165159.png](/assets/images/Pasted image 20230123165159.png)
 
 - Give the Webhook a Unique name , and copy the Webhook URL and keep it aside for future reference. Click Save.
 
-![[Pasted image 20230123165311.png]]
+![Pasted image 20230123165311.png](/assets/images/Pasted image 20230123165311.png)
 
 - Navigate to the relevant Service from the Left Pane and click on Create Blank Flow.
 
-![[Pasted image 20230123165351.png]]
+![Pasted image 20230123165351.png](/assets/images/Pasted image 20230123165351.png)
 
 - Give the flow a name and click Create. Select the Webhook as the Trigger category.
 
-![[Pasted image 20230123165432.png]]
+![Pasted image 20230123165432.png](/assets/images/Pasted image 20230123165432.png)
 
 - Select the Webhook name from the dropdown and paste the below Json data and click Parse. Save the changes
 
@@ -1956,19 +1956,19 @@ This lab walks through the configuration of Events and Triggers in the Webex Con
 
 }
 
-![[Pasted image 20230123165512.png]]
+![Pasted image 20230123165512.png](/assets/images/Pasted image 20230123165512.png)
 
 - Drag the Email node from the left pane on to the canvas and connect the two nodes.
 
-![[Pasted image 20230123165549.png]]
+![Pasted image 20230123165549.png](/assets/images/Pasted image 20230123165549.png)
 
 - Open the Email node and enter the Destination ID, From Name, Message and Subject. Click Save.
 
-![[Pasted image 20230123165742.png]]
+![Pasted image 20230123165742.png](/assets/images/Pasted image 20230123165742.png)
 
 - Save the flow and make live.
 
-![[Pasted image 20230123165855.png]]
+![Pasted image 20230123165855.png](/assets/images/Pasted image 20230123165855.png)
 
 ### 2.     Creating an Event in Webex Engage Portal
 
