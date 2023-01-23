@@ -1927,23 +1927,23 @@ This lab walks through the configuration of Events and Triggers in the Webex Con
 
 -   From Left column, navigate to Assets--> Integrations
 
-![[Pastedimage20230123163907.png]]
+![[12.21_1.png]]
 
 - Click on Add Integration-->Inbound Webhook
 
-![Pasted image 20230123165159.png](/assets/images/Pasted image 20230123165159.png)
+![[12.21_2.png]]
 
 - Give the Webhook a Unique name , and copy the Webhook URL and keep it aside for future reference. Click Save.
 
-![Pasted image 20230123165311.png](/assets/images/Pasted image 20230123165311.png)
+![[12.21_3.png]]
 
 - Navigate to the relevant Service from the Left Pane and click on Create Blank Flow.
 
-![Pasted image 20230123165351.png](/assets/images/Pasted image 20230123165351.png)
+![[12.21_4.png]]
 
 - Give the flow a name and click Create. Select the Webhook as the Trigger category.
 
-![Pasted image 20230123165432.png](/assets/images/Pasted image 20230123165432.png)
+![[12.21_5.png]]
 
 - Select the Webhook name from the dropdown and paste the below Json data and click Parse. Save the changes
 
@@ -1955,61 +1955,61 @@ This lab walks through the configuration of Events and Triggers in the Webex Con
 
 }
 
-![Pasted image 20230123165512.png](/assets/images/Pasted image 20230123165512.png)
+![[12.21_6.png]]
 
 - Drag the Email node from the left pane on to the canvas and connect the two nodes.
 
-![Pasted image 20230123165549.png](/assets/images/Pasted image 20230123165549.png)
+![[12.21_7.png]]
 
 - Open the Email node and enter the Destination ID, From Name, Message and Subject. Click Save.
 
-![Pasted image 20230123165742.png](/assets/images/Pasted image 20230123165742.png)
+![[12.21_8.png]]
 
 - Save the flow and make live.
 
-![Pasted image 20230123165855.png](/assets/images/Pasted image 20230123165855.png)
+![[12.21_9.png]]
 
 ### 2.     Creating an Event in Webex Engage Portal
 
 - Login to Webex Contact Centre Management Portal and cross launch Webex Engage from the left side pane.
 
-![[Pasted image 20230123165942.png]]
+![[12.21_10.png]]
 
 - Click on Groups- --> Default
 
-![[Pasted image 20230123170025.png]]
+![[12.21_11.png]]
 
 - Click on the Default Team
--
-![[Pasted image 20230123170054.png]]
+
+![[12.21_12.png]]
 
 -  Click on Events and Rules and click Add new event.
 
-![[Pasted image 20230123170213.png]]
+![[12.21_13.png]]
 
 - Enter a unique name, Method, Webhook URL, payload as Key Value pair .
 
-![[Pasted image 20230123170247.png]]
+![[12.21_14.png]]
 
 - To enter the key Value pair, click on Add Param and enter parameters as shown below.
 
-![[Pasted image 20230123170320.png]]
+![[12.21_15.png]]
 
 - Repeat the above step to create the url parameter
 
-![[Pasted image 20230123170351.png]]
+![[12.21_16.png]]
 
 ### 3.     Test the Event Trigger
 
 - Login to the agent desktop and initiate a chat session. After accepting the chat session click on the lightning bolt icon to select the trigger and click Next.
 
-![[Pasted image 20230123170453.png]]
+![[12.21_17.png]]
 
-![[Pasted image 20230123170516.png]]
+![[12.21_18.png]]
 
 - Enter the email address you want to send the Email to and the url and press Trigger.
 
-![[Pasted image 20230123170547.png]]
+![[12.21_19.png]]
 
 - Check the recipient’s mailbox to validate the Email has been received successfully.
 
