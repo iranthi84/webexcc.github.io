@@ -1927,7 +1927,8 @@ This lab walks through the configuration of Events and Triggers in the Webex Con
 
 -   From Left column, navigate to Assets--> Integrations
 
-![[12.21_1.png]]
+![12.21_1](/assets/images/12.21_1.png)
+
 
 - Click on Add Integration-->Inbound Webhook
 
