@@ -1929,6 +1929,8 @@ This lab walks through the configuration of Events and Triggers in the Webex Con
 
 ![[Pasted image 20230123163907.png]]
 
+obsidian://open?vault=webexcc.github.io&file=assets%2Fimages%2FPasted%20image%2020230123163907.png
+
 - Click on Add Integration-->Inbound Webhook
 
 ![Pasted image 20230123165159.png](/assets/images/Pasted image 20230123165159.png)
