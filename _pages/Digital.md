@@ -1837,9 +1837,11 @@ This lab is designed to complete a new QnA bot creation, new article creation an
 | Creating a voice flow in flow control| Practical Lab | MID           | 15 min           |
 | Test the Inbound Webhook  | Practical Lab | EASY          | 5 min           |
 
+
 ## Quick Links
 
 [https://help.imiconnect.io/docs/inbound-webhooks](https://help.imiconnect.io/docs/inbound-webhooks)
+
 
 ## Lab Objective
 
@@ -1849,6 +1851,7 @@ In this lab, we will explore how an Inbound Webhook can be used to generate an e
 
 ![12.18.1.png](/assets/images/12.18.1.png)
 
+
 ## Pre-requisite
 
 -   Admin credentials to login to WxCC and Webex Connect portal
@@ -1856,15 +1859,19 @@ In this lab, we will explore how an Inbound Webhook can be used to generate an e
 -   Knowledge of WxCC Connect flows and basic troubleshooting
 -
 
+
 ### 1.     Create an Inbound Webhook
 
 -   Click on Assets ---> Integrations from the left navigation pane 
 
 ![12.18.2.png](/assets/images/12.18.2.png)
 
+
 -   Click on the Add Integration button and select Inbound Webhook
--
+
+
 ![12.18.3.png](/assets/images/12.18.3.png)
+
 
 - Enter a unique name for the Inbound Webhook and enter the JSON data as follows. Click on Parse and Save.
 
@@ -1875,33 +1882,48 @@ In this lab, we will explore how an Inbound Webhook can be used to generate an e
     "maintenance":"maintenance notification"
 }
 
+
 ![12.18.4.png](/assets/images/12.18.4.png)
+
 
 - Navigate to the Service you created earlier on in the labs and click on Create blank Flow.
 
+
 ![12.18.5.png](/assets/images/12.18.5.png)
+
 
 - Give the flow a unique name and click on create flow button.
 
+
 - Select the Trigger Category as Webhook
+
 
 ![12.18.6.png](/assets/images/12.18.6.png)
 
+
 - Select the Webhook you created in a previous step and click Save.
+
 
 ![12.18.7.png](/assets/images/12.18.7.png)
 
+
 - Drag and drop the Email node from the left pane and connect the two nodes.
+
 
 ![12.18.8.png](/assets/images/12.18.8.png)
 
+
 - Double click on the Email node to access the settings and details as shown below. Click Save.
+
 
 ![12.18.9.png](/assets/images/12.18.9.png)
 
+
 - Save the flow and make the flow Live.
 
+
 ### 2.     Creating a voice flow in flow control
+
 
 - Login to the Webex Contact Centre management portal and navigate to flow control.
 
@@ -1915,11 +1937,15 @@ Request Body:
 "outage": "Current power outages are applicable for the suburbs 2118, 2456, 2761, 2229"
 }
 
+
 ![12.18.10.png](/assets/images/12.18.10.png)
+
 
 ![12.18.11.png](/assets/images/12.18.11.png)
 
+
 -Save and publish the flow.
+
 
 ### 3.     Testing the Inbound Webhook
 
@@ -1929,9 +1955,14 @@ Request Body:
 
 - Check the email box of the Destination Email address that was entered in the Webex Connect flow to ensure the email has been received.
 
+
 ![12.18.12.png](/assets/images/12.18.12.png)
 
 
+
+<p style="text-align:center"><strong>Congratulations, you have completed **ALL section**. Well done!!!</strong></p>
+		
+<p style="text-align:center;"><img src="/assets/gitbook/images/webex.png" width="100"></p>
 
 # Lab 12.20 - Creating Custom Nodes
 ## Table of Contents
@@ -2116,6 +2147,13 @@ This lab walks through the configuration of Events and Triggers in the Webex Con
 ![12.21_19.png](/assets/images/12.21_19.png)
 
 - Check the recipient’s mailbox to validate the Email has been received successfully.
+
+
+<p style="text-align:center"><strong>Congratulations, you have completed **ALL section**. Well done!!!</strong></p>
+		
+<p style="text-align:center;"><img src="/assets/gitbook/images/webex.png" width="100"></p>
+
+
 
 # Lab 12.24 - Global and Flow variable support in Digital channels
 
