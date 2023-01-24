@@ -1827,6 +1827,91 @@ This lab is designed to complete a new QnA bot creation, new article creation an
 		
 <p style="text-align:center;"><img src="/assets/gitbook/images/webex.png" width="100"></p>
 
+# Lab 12.18 - Inbound Webhooks
+
+## Table of Contents
+
+| Topic                                                                                    | Lab Type      | Dificulty Level | Estimated length |
+| ---------------------------------------------------------------------------------------- | ------------- | --------------- | ---------------- |
+| Creating an Inbound webhook flow | Practical Lab | MID           | 15 min           |
+| Creating a voice flow in flow control| Practical Lab | MID           | 15 min           |
+| Test the Inbound Webhook  | Practical Lab | EASY          | 5 min           |
+
+## Quick Links
+
+[https://help.imiconnect.io/docs/inbound-webhooks](https://help.imiconnect.io/docs/inbound-webhooks)
+
+## Lab Objective
+
+Inbound Webhooks generate a unique endpoint that can be embedded into your applications to notify Webex Connect of events occurring on business systems.This lab is designed to showcase the capabilities of an inbound Webhook in Webex Connect.
+
+In this lab, we will explore how an Inbound Webhook can be used to generate an email to a customer that initiated the contact through a voice call.
+
+
+## Pre-requisite
+
+-   Admin credentials to login to WxCC and Webex Connect portal
+
+-   Knowledge of WxCC Connect flows and basic troubleshooting
+-
+
+### 1.     Create an Inbound Webhook
+
+-   Click on Assets ---> Integrations from the left navigation pane 
+
+-   Click on the Add Integration button and select Inbound Webhook
+
+- Enter a unique name for the Inbound Webhook and enter the JSON data as follows. Click on Parse and Save.
+
+*Note: Save the Webhook URL for future reference*
+
+{
+
+    "outage":"outage notification",
+
+    "maintenance":"maintenance notification"
+
+}
+
+- Navigate to the Service you created earlier on in the labs and click on Create blank Flow.
+-
+- Give the flow a unique name and click on create flow button.
+
+- Select the Trigger Category as Webhook
+
+- Select the Webhook you created in a previous step and click Save.
+
+- Drag and drop the Email node from the left pane and connect the two nodes.
+
+- Double click on the Email node to access the settings and details as shown below. Click Save.
+
+- Save the flow and make the flow Live.
+
+### 2.     Creating a voice flow in flow control
+
+- Login to the Webex Contact Centre management portal and navigate to flow control.
+
+- Create a simple flow that sends out Outage details as an email. The main menu prompt takes the caller to a http request node when they press 1.
+
+- The http request node then triggers the Webhook along with the message that needs to be sent out in the request body .
+
+Request Body:
+
+{
+"outage": "Current power outages are applicable for the suburbs 2118, 2456, 2761, 2229"
+}
+
+-Save and publish the flow.
+
+### 3.     Testing the Inbound Webhook
+
+- Make a call to the Entry point associated with the voice call flow that you created in the previous step.
+
+- After making the selection and the call should get disconnected.
+
+- Check the email box of the Destination Email address that was entered in the Webex Connect flow to ensure the email has been received.
+
+
 
 # Lab 12.20 - Creating Custom Nodes
 ## Table of Contents
@@ -2011,7 +2096,6 @@ This lab walks through the configuration of Events and Triggers in the Webex Con
 ![12.21_19.png](/assets/images/12.21_19.png)
 
 - Check the recipient’s mailbox to validate the Email has been received successfully.
-
 
 # Lab 12.24 - Global and Flow variable support in Digital channels
 
