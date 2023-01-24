@@ -1847,6 +1847,7 @@ Inbound Webhooks generate a unique endpoint that can be embedded into your appli
 
 In this lab, we will explore how an Inbound Webhook can be used to generate an email to a customer that initiated the contact through a voice call.
 
+![12.18.1.png](/assets/images/12.18.1.png)
 
 ## Pre-requisite
 
@@ -1859,31 +1860,44 @@ In this lab, we will explore how an Inbound Webhook can be used to generate an e
 
 -   Click on Assets ---> Integrations from the left navigation pane 
 
+![12.18.2.png](/assets/images/12.18.2.png)
+
 -   Click on the Add Integration button and select Inbound Webhook
+-
+![12.18.3.png](/assets/images/12.18.3.png)
 
 - Enter a unique name for the Inbound Webhook and enter the JSON data as follows. Click on Parse and Save.
 
 *Note: Save the Webhook URL for future reference*
 
 {
-
     "outage":"outage notification",
-
     "maintenance":"maintenance notification"
-
 }
 
+![12.18.4.png](/assets/images/12.18.4.png)
+
 - Navigate to the Service you created earlier on in the labs and click on Create blank Flow.
--
+
+![12.18.5.png](/assets/images/12.18.5.png)
+
 - Give the flow a unique name and click on create flow button.
 
 - Select the Trigger Category as Webhook
 
+![12.18.6.png](/assets/images/12.18.6.png)
+
 - Select the Webhook you created in a previous step and click Save.
+
+![12.18.7.png](/assets/images/12.18.7.png)
 
 - Drag and drop the Email node from the left pane and connect the two nodes.
 
+![12.18.8.png](/assets/images/12.18.8.png)
+
 - Double click on the Email node to access the settings and details as shown below. Click Save.
+
+![12.18.9.png](/assets/images/12.18.9.png)
 
 - Save the flow and make the flow Live.
 
@@ -1901,6 +1915,10 @@ Request Body:
 "outage": "Current power outages are applicable for the suburbs 2118, 2456, 2761, 2229"
 }
 
+![12.18.10.png](/assets/images/12.18.10.png)
+
+![12.18.11.png](/assets/images/12.18.11.png)
+
 -Save and publish the flow.
 
 ### 3.     Testing the Inbound Webhook
@@ -1910,6 +1928,8 @@ Request Body:
 - After making the selection and the call should get disconnected.
 
 - Check the email box of the Destination Email address that was entered in the Webex Connect flow to ensure the email has been received.
+
+![12.18.12.png](/assets/images/12.18.12.png)
 
 
 
